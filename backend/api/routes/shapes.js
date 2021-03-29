@@ -22,7 +22,8 @@ router.get('/', (req, res, next) => {
     });
 });
 
-router.post('/country', checkAuth, (req, res, next) => {
+// add authorization in this route
+router.post('/country', (req, res, next) => {
     const country = new Country({
         _id: new mongoose.Types.ObjectId(),
         name: req.body.name,

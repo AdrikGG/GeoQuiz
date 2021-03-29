@@ -1,10 +1,11 @@
-const { useEffect } = require("react");
+import React from 'react';
+const { useEffect, useState } = require("react");
 
-function shapes() {
-    const [countries, setCountries] = setState([]);
-    const [currCountry, setCurrCountry] = setState();
+function Shapes() {
+    const [countries, setCountries] = useState([]);
+    const [currCountry, setCurrCountry] = useState();
 
-    useEffect(() => {
+    useEffect(async () => {
         const response = await fetch('/shapes', {
             method: 'GET',
             headers: {
@@ -22,3 +23,5 @@ function shapes() {
         </div>
     )
 }
+
+export default Shapes;

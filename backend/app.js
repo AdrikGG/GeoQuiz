@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const shapesRoutes = require('./api/routes/shapes');
 const heatRoutes = require('./api/routes/heat');
 const homeRoute = require('./api/routes/home');
+require("dotenv").config();
 
 mongoose.connect(
     process.env.DATABASE,
