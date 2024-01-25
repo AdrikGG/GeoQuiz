@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useTheme } from './global styles/ThemeContext';
 import axios from 'axios';
 
@@ -46,16 +46,18 @@ const App = () => {
         overflow: 'scroll'
       }}
     >
-      <Navbar />
-      <Routes>
-        <Route path="/dashboard" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/silhouette" element={<SilhouettesGame />} />
-        <Route path="/guess-game" element={<HotColdGame />} />
-        <Route path="/malay-islands" element={<MalayIslandsGame />} />
-        <Route path="*" element={<Navigate to="/dashboard" />} />
-      </Routes>
+      <HashRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/dashboard" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/silhouette" element={<SilhouettesGame />} />
+          <Route path="/guess-game" element={<HotColdGame />} />
+          <Route path="/malay-islands" element={<MalayIslandsGame />} />
+          <Route path="*" element={<Navigate to="/dashboard" />} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 };

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { HashRouter } from 'react-router-dom';
 import axios from 'axios';
 import { Provider } from 'react-redux';
 import store from './store/index';
@@ -17,11 +16,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <HashRouter>
-        <ThemeProvider>
-          <App />
-        </ThemeProvider>
-      </HashRouter>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </Provider>
   </React.StrictMode>
 );
