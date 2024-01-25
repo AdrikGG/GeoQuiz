@@ -54,7 +54,7 @@ const App = () => {
         <Route path="/silhouette" element={<SilhouettesGame />} />
         <Route path="/guess-game" element={<HotColdGame />} />
         <Route path="/malay-islands" element={<MalayIslandsGame />} />
-        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        <Route path="*" element={<Navigate to="/dashboard" />} />
       </Routes>
     </div>
   );
