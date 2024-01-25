@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "homepage": "https://adrikgg.github.io/GeoQuiz/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
