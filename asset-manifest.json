@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/GeoQuiz/static/css/main.c03794f8.css",
-    "main.js": "/GeoQuiz/static/js/main.af794d64.js",
+    "main.js": "/GeoQuiz/static/js/main.8311b155.js",
     "static/media/QuestionMarks.gif": "/GeoQuiz/static/media/QuestionMarks.4219b8b4961bfd70dc9b.gif",
     "static/media/WorldMap.png": "/GeoQuiz/static/media/WorldMap.909383340f890c760cb8.png",
     "static/media/Malay_Archipelago_in_Southeast_Asia.png": "/GeoQuiz/static/media/Malay_Archipelago_in_Southeast_Asia.a88a2e2bf41e6e0f646a.png",
     "static/media/AD.png": "/GeoQuiz/static/media/AD.0bf36f373797189aabdb.png",
     "index.html": "/GeoQuiz/index.html",
     "main.c03794f8.css.map": "/GeoQuiz/static/css/main.c03794f8.css.map",
-    "main.af794d64.js.map": "/GeoQuiz/static/js/main.af794d64.js.map"
+    "main.8311b155.js.map": "/GeoQuiz/static/js/main.8311b155.js.map"
   },
   "entrypoints": [
     "static/css/main.c03794f8.css",
-    "static/js/main.af794d64.js"
+    "static/js/main.8311b155.js"
   ]
 }
